@@ -22,8 +22,7 @@ Remember to choose a different time
 
 `22 1 * * * docker start PrivateBin`
 
-###### Please note that stopping and starting apache2 might not be necessary. I will be testing this in 3 months time when my
-certificate expires.
+###### Please note that stopping and starting apache2 might not be necessary. I will be testing this in 3 months time when my certificate expires.
 ___
 
 ## [Certbot Documentation](https://certbot.eff.org/docs/using.html)
