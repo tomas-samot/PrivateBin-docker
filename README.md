@@ -18,7 +18,7 @@ Replace `example.com` with the domain you wish to use. (Dockerfile and `cert.sh`
 ### Add to Cron
 Remember to choose a different time
 
-`20 1 * * * docker exec -it PrivateBin bash -c "certbot renew --post-hook 'service apache2 stop'"`
+`22 2 * * * docker exec -i PrivateBin bash -c "certbot renew --post-hook 'service apache2 stop'"`
 
 `22 1 * * * docker start PrivateBin`
 
