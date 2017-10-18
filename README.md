@@ -11,7 +11,7 @@ Replace `example.com` with the domain you wish to use. (Dockerfile and `cert.sh`
 `docker build PrivateBin-docker -t privatebin`
 
 ### Docker Run Command
-`sudo docker run -p 80:80 -p 443:443 -d -t --name PrivateBin -h example.com -i privatebin`
+`sudo docker run -p 80:80 -p 443:443 -i -d -t --name PrivateBin -h example.com privatebin`
 
 ### Read and Run `cert.sh`
 
