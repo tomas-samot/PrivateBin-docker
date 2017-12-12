@@ -14,6 +14,7 @@ Replace `example.com` with the domain you wish to use. (Dockerfile and `cert.sh`
 `sudo docker run -p 80:80 -p 443:443 -i -d -t --name PrivateBin -h example.com privatebin`
 
 ### Read and Run `cert.sh`
+`docker exec -i PrivateBin bash -c "cd / && bash cert.sh"`
 
 ### Add to Cron
 Remember to choose a different time
