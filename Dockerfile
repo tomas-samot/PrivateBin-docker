@@ -33,9 +33,11 @@ RUN cd /tmp \
     && cd /var/www/html \
     && rm *.md
 
-RUN echo 'deb http://ftp.debian.org/debian jessie-backports main' >> /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install -y python-certbot-apache -t jessie-backports
+RUN apt-get install software-properties-common
+RUN add-apt-repository ppa:certbot/certbot
+RUN apt-get update
+RUN apt-get install -y python-certbot-apache
 
 RUN rm -rf /var/lib/apt/lists/*
 RUN apt-get --purge autoremove -y unzip
