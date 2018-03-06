@@ -1,6 +1,6 @@
 # PrivateBin Docker
 Dockerfile to setup [PrivateBin](https://github.com/PrivateBin/PrivateBin) and [Certbot](https://certbot.eff.org/)
-inside a [Docker](https://www.docker.com) containter.
+inside a [Docker](https://www.docker.com) container.
 
 ___
 
